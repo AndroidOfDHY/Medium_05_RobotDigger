@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url" value="jdbc:mysql://localhost:3306"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="1213"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>
+					com/sunrise/robotdigger/hibernate/Users.hbm.xml
+				</value>
+				<value>
+					com/sunrise/robotdigger/hibernate/Uploadfile.hbm.xml
+				</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="upload" class="com.sunrise.robotdigger.action.UploadAction">
+		<property name="uploadfileDAO">
+			<ref bean="UploadfileDAO" />
+		</property>
+		<property name="usersDAO">
+			<ref bean="UsersDAO" />
+		</property>
+	</bean>
+	<bean id="uploadfiles" class="com.sunrise.robotdigger.action.UploadFilesAction">
+		<property name="usersDAO">
+			<ref bean="UsersDAO" />
+		</property>
+	</bean>
+	<bean id="login" class="com.sunrise.robotdigger.action.LoginAction">
+		<property name="usersDAO">
+			<ref bean="UsersDAO" />
+		</property>
+	</bean>
+	<bean id="download" class="com.sunrise.robotdigger.action.Download">
+		<property name="uploadfileDAO">
+			<ref bean="UploadfileDAO" />
+		</property>
+		<property name="usersDAO">
+			<ref bean="UsersDAO" />
+		</property>
+	</bean>
+	<bean id="UsersDAO" class="com.sunrise.robotdigger.hibernate.UsersDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UploadfileDAO" class="com.sunrise.robotdigger.hibernate.UploadfileDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+</beans>

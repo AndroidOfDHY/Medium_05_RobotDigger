@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#111"
+        android:orientation="vertical" >
+        
+    <RelativeLayout 
+        android:id="@+id/shake_title_bar" 
+  		android:layout_width="fill_parent"
+  		android:layout_height="45dp"
+  		android:background="@drawable/title_bar"
+  		android:gravity="center_vertical"  >
+  			<Button
+  			    android:id="@+id/button_1"
+            	android:layout_width="70dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:text="@string/black"
+            	android:textSize="14sp"
+            	android:textColor="#fff"
+            	android:onClick="shake_activity_back"
+           		android:background="@drawable/title_btn_back"/>  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="@string/register"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" /> 
+			      
+	</RelativeLayout>
+	<LinearLayout
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+      		
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/userName_label">
+	</TextView>
+	
+	<EditText 
+	    android:id="@+id/registerUserName"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent">
+	</EditText>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/password_lable">
+	</TextView>
+	
+	<EditText 
+	    android:text="" 
+	    android:id="@+id/registerPassword"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:password="true">
+	</EditText>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/passwordConfirm_label">
+	</TextView>
+	
+	<EditText android:text="" 
+	    android:id="@+id/registerPasswordConfirm"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:password="true">
+	</EditText>
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/email_name">
+	</TextView>
+	
+	<EditText android:text="" 
+	    android:id="@+id/registerEmail"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+	</EditText>
+	<Button
+	    android:id="@+id/registerSubmit"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/loginRegister">
+	</Button>
+	<Button 
+	    android:id="@+id/registerClear" 
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/clearAll">
+	    
+	</Button>
+</LinearLayout>
+    
+
+    
+
+</LinearLayout>

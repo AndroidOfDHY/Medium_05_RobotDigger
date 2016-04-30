@@ -1,0 +1,281 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,sup,fieldset,input,button,form,textarea
+	{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border: 0px;
+}
+em {
+	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: normal 12px/1.6em simsun, Tahoma, Verdana, Lucida, Arial,
+		Helvetica, sans-serif;
+	color: #6e6e6e;
+	background: url(../image/bg_bd.png) repeat #ffffff;
+}
+
+.down_beifen_box {
+	width: 512px;
+	border: 2px solid #dddddd;
+	height: 60px;
+	margin-left: -256px;
+	position: absolute;
+	top: 342px;
+	left: 65%;
+	z-index: 9999;
+	font: normal 14px/24px \5FAE\8F6F\96C5\9ED1;
+}
+
+.set_box_select th p {
+	font: normal 20px/40px \5FAE\8F6F\96C5\9ED1;
+	border-style: outset;
+}
+
+.download_box,.set_box,.login_box,.nologin_box {
+	width: 512px;
+	border: 2px solid #dddddd;
+	height: 182px;
+	margin-left: -256px;
+	position: absolute;
+	top: 130px;
+	left: 65%;
+	z-index: 9999;
+	font: normal 14px/24px \5FAE\8F6F\96C5\9ED1;
+}
+
+.dan{background:#000; filter: alpha(opacity=50); opacity: 0.5; height:100%; _height:1100px; width:100%; overflow:hidden; position:fixed; _position: absolute; left:0; top:0; z-index:9999;}
+.weima{
+	height: 200px;
+	margin-left: -256px;
+	position: absolute;
+	top: 140px;
+	left: 65%;
+	z-index: 9999;
+	font: normal 14px/24px \5FAE\8F6F\96C5\9ED1;
+}
+
+.nologin_box {
+	height: 200px;
+}
+
+.set_box {
+	height: 240px;
+}
+
+.b_clo {
+	background: url(../image/s_p.png) no-repeat;
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
+.weima .b_clo{
+	top: 5px;
+	right: 0px;
+}
+
+.box_con {
+	padding: 30px 16px 20px 16px;
+}
+
+.down_beifen_box .box_con {
+	padding: 10px 16px 20px 16px;
+}
+
+.box_con h3 {
+	font-size: 16px;
+	color: #535353;
+}
+
+.set_box h3 {
+	float: left;
+	left: 30px;
+	top: 30px;
+	font-size: 16px;
+	color: #535353;
+}
+
+.box_con p {
+	color: #b4b1b1;
+}
+
+.dr_code {
+	overflow: hidden;
+	height: 33px;
+	margin: 5px 0 15px 0;
+	clear: both;
+}
+
+.dr_addr {
+	background: #d5d1d1;
+	float: left;
+	width: 380px;
+	height: 32px;
+	padding: 0 5px;
+	border: none;
+	font: normal 16px/32px \5FAE\8F6F\96C5\9ED1;
+	color: #535353;
+}
+
+.dr_btn,.dr_btn_bf {
+	background: url(../image/s_bg1.png) no-repeat;
+	float: left;
+	margin-left: 5px;
+	display: inline;
+	width: 82px;
+	height: 33px;
+	border: none;
+	font: normal 16px/32px \5FAE\8F6F\96C5\9ED1;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.down_beifen_box .dr_btn {
+	margin-left: 200px;
+	margin-top: -30px;
+}
+
+.tqm_ok: {
+	font: normal 16px/32px \5FAE\8F6F\96C5\9ED1;
+	letter-spacing: 20px;
+}
+
+.tqm_ok:active,.tqbf_ok:active {
+	font: normal 15px/30px \5FAE\8F6F\96C5\9ED1;
+}
+
+.p_con1 {
+	padding: 30px 20px 0 20px;
+	font: normal 12px/20px \5B8B\4F53;
+	color: #333333;
+}
+
+.ip_sel {
+	background: #f5f2f0;
+	border: #d1b8ae solid 1px;
+	width: 322px;
+	height: 28px;
+	box-shadow: inset 2px 2px 3px #dcdcdc;
+	position: relative;
+}
+
+.s_ip {
+	background: none;
+	width: 282px;
+	padding: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: none;
+	float: left;
+	color: #bbb9b9;
+}
+
+.p_btn {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.p_btn a {
+	background: url(../image/s_bg1.png) no-repeat;
+	width: 113px;
+	height: 31px;
+	display: inline-block;
+	font: normal 17px/34px \5FAE\8F6F\96C5\9ED1;
+	letter-spacing: 20px;
+	color: #ffffff;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.set_ok:active,.login_ok:active {
+	font: normal 16px/32px \5FAE\8F6F\96C5\9ED1;
+}
+
+.cancel:active {
+	font: normal 16px/32px \5FAE\8F6F\96C5\9ED1;
+}
+
+.mod_info {
+	margin-top: 10px;
+}
+
+.mod_ip {
+	height: 30px;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+.mod_ip label {
+	float: left;
+	width: 60px;
+	line-height: 28px;
+}
+
+.mod_ip .ip_sel {
+	float: left;
+	width: 300px;
+}
+
+.mod_ip .ip_sel_1 {
+	position: static;
+}
+
+.mod_ip .drop_list {
+	left: -1px;
+	width: 300px;
+}
+
+.mod_ip .s_ip {
+	width: 250px;
+}
+
+.mod_ip .s_ip1 {
+	width: 270px;
+}
+
+.mod_ip p {
+	margin-left: 60px;
+	color: #bfbfbf;
+}
+
+#lift {
+	float: left;
+	padding-left: 130px;
+	height: 550px;
+	width: 350px;
+}
+
+.container {
+	float: left;
+	padding-left: 100px;
+	height: 550px;
+	width: 700px;
+}
+
+.2 {
+	margin: 0 0 0 0px;
+	padding: 0 0 0 0px;
+}
+
+.userid {
+	font: normal 25px/50px "楷体", "楷体_GB2312";
+	color: #FFFFFF;
+	padding-top: 10px;
+	text-align: center
+}

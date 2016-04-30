@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+     >
+
+     <LinearLayout
+         android:id="@+id/LinearLayout"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="0.67"
+         android:gravity="center"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             android:paddingTop="35dp"
+             android:src="@drawable/icon" />
+
+         <LinearLayout
+             android:id="@+id/LinearLayout_1"
+             android:layout_width="176dp"
+             android:layout_height="wrap_content"
+             android:orientation = "vertical"
+             android:gravity="center" >
+         </LinearLayout>
+
+         <RelativeLayout
+             android:layout_marginTop="50dip"
+             android:id="@+id/relativeLayout_1"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+             <EditText
+                 android:id="@+id/editText_1"
+                 android:layout_width="260dip"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:layout_centerHorizontal="true"
+                 android:background="@drawable/login_selector"
+                 android:ems="10"
+                 android:hint="@string/account_number" >
+
+                 <requestFocus />
+             </EditText>
+
+             <EditText
+                 android:id="@+id/editText_2"
+                 android:layout_width="260dip"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/editText_1"
+                 android:layout_below="@+id/editText_1"
+                 android:background="@drawable/login_selector"
+                 android:ems="10"
+                 android:hint="@string/security_code"
+                 android:password="true" />
+
+             <Button
+                 android:id="@+id/button_1"
+                 android:layout_width="260dip"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/editText_1"
+                 android:layout_below="@+id/editText_2"
+                 android:layout_marginTop="20dip"
+                 android:text="@string/login" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="0.00"
+             android:orientation="horizontal" >
+
+             <Button
+                 android:id="@+id/button_2"
+                 android:layout_width="160dp"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:text="找回密码" />
+
+             <Button
+                 android:id="@+id/button_3"
+                 android:layout_width="160dp"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_toRightOf="@+id/button_2"
+                 android:text="新注册" />
+         </RelativeLayout>
+     </LinearLayout>
+
+</LinearLayout>
